@@ -73,8 +73,7 @@ body {
 
 .container {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -141,7 +140,7 @@ body {
 .contacts {
   display: flex;
   gap: 50px;
-  margin-left: 344px;
+  margin-left: 215px;
 }
 
 .contacts :hover,
@@ -150,7 +149,10 @@ body {
 }
 
 .contact-item {
-  display: block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -164,11 +166,21 @@ body {
 /* *********************************MAIN**************************/
 
 .main {
-  background-color: #2f303a;
-  text-align: center;
-  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
   padding: 200px 0;
+
+  background-color: #2f303a;
+  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/imghero.jpg");
 }
 
 .title {
@@ -199,8 +211,6 @@ body {
 }
 
 .button-main {
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-
   display: inline-block;
   margin: 0 auto;
   padding: 10px 32px;
@@ -217,8 +227,8 @@ body {
   border-color: transparent;
   border-radius: 4px;
   border: 0;
-  /* width: 216px;
-  height: 50px; */
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-main:hover,
@@ -247,7 +257,18 @@ body {
   gap: 0;
 }
 
+.feature-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #F5F4FA;
+  width: 270px;
+  height: 120px;
+}
+
 .feature-title {
+  padding-top: 30px;
   margin-bottom: 10px;
 
   font-style: normal;
@@ -293,10 +314,44 @@ body {
   color: var(--primary-main-color);
 }
 
+/* **********************************************КОМАНДА****************************** */
+
 .title-command {
   background-color: var(--background-head-color);
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.icon-title-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-title-link:hover,
+.icon-title-link:focus {
+  background-color:  var(--accent-color);
+}
+
+.icon-title-link:hover .icon-title-comand,
+.icon-title-link:focus .icon-title-comand {
+  fill:#FFFFFF;
+}
+
+.icon-title-comand {
+  fill: #AFB1B8;
+}
+
+.title-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 10px;
 }
 
 .title-command-list {
@@ -306,7 +361,6 @@ body {
 
 .title-head-command {
   margin-bottom: 50px;
-
 
   text-align: center;
   font-weight: 700;
@@ -325,6 +379,9 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .title-command-name {
@@ -341,6 +398,48 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-bottom: 16px;
+}
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-main-color);
+}
+
+.icon-title-clients {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+}
+
+.icon-title-clients:hover .icon-title-clients,
+.icon-title-clients:focus .icon-title-clients {
+  fill:var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.icon-title-clients {
+  fill: #AFB1B8;
+}
+
+.clients-list-item {
+  display: flex;
+  gap: 30px;
 }
 
 /* *********************************FOOTER!**************************/
@@ -360,7 +459,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--primary-white-color);
-
 }
 
 span.logo-footer-accent {
