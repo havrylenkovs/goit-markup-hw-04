@@ -346,6 +346,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #AFB1B8;
 }
 
 .icon-title-link:hover,
