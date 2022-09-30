@@ -314,7 +314,7 @@ body {
   color: var(--primary-main-color);
 }
 
-/* **********************************************КОМАНДА****************************** */
+/* **********************************************COMMAND****************************** */
 
 .title-command {
   background-color: var(--background-head-color);
@@ -450,6 +450,17 @@ body {
   padding-bottom: 60px;
 }
 
+.first-footer {
+  display: flex;
+  align-items: center;
+  align-items: baseline;
+}
+
+.footer-list {
+  display: block;
+  margin-right: 70px;
+}
+
 .logo-footer {
   display: block;
   margin-bottom: 20px;
@@ -473,6 +484,16 @@ span.logo-footer-accent {
   list-style: none;
 }
 
+.address-list .link {
+  display: block;
+}
+
+
+.address-item {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+}
+
 .address-list :hover,
 .address-list :focus {
   color: var(--accent-color);
@@ -487,9 +508,61 @@ span.logo-footer-accent {
   margin-bottom: 9px;
 }
 
-.address-item {
-  color: rgba(255, 255, 255, 0.6);
+
+
+/* ********************************FOOTER2*********************************** */
+
+.last-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-last-header {
+  margin-bottom: 20px;
+
   display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+
+.footer-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  gap: 10px;
+}
+
+.icon-footer-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  gap: 10px;
+}
+
+.icon-footer-link:hover,
+.icon-footer-link:focus {
+  background-color:  var(--accent-color);
+}
+
+.icon-footer-link:hover .icon-title-footer,
+.icon-footer-link:focus .icon-title-footer {
+  fill:#FFFFFF;
+}
+
+.icon-title-footer {
+  fill: #FFFFFF;
 }
 
 /* *********************************PORTFOLIO****************************/
