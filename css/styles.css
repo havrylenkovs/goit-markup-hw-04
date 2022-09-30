@@ -148,6 +148,24 @@ link.current {
   color: var(--accent-color);
 }
 
+.icon-contact-mail {
+  fill: currentColor;
+}
+
+.icon-contact-phone {
+  fill: currentColor;
+}
+
+.icon-contact-mail :hover,
+.icon-contact-mail :focus {
+  color: var(--accent-color);
+}
+
+.icon-contact-phone :hover,
+.icon-contact-phone :focus {
+  color: var(--accent-color);
+}
+
 .contact-item {
   display: flex;
   gap: 10px;
@@ -435,10 +453,6 @@ link.current {
   justify-content: center;
   align-items: center;
 }
-
-/* .icon-clients-list:not(:last-child){
-  margin-right: 30px;
-} */
 
 .icon-title-clients:hover,
 .icon-title-clients:focus {
